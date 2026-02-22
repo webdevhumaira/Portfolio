@@ -2,9 +2,9 @@
        CSS Custom Properties (Design Tokens)
     ============================================= */
 :root {
-    --primary: #6c63ff;
+    --primary: #6cbf00;
     --secondary: #ff6584;
-    --accent: #43e97b;
+    --accent: #0f09c7;
     --dark: #0d0d1a;
     --darker: #08080f;
     --card-bg: #13132a;
@@ -15,8 +15,8 @@
 
 
 /* =============================================
-       Reset & Base
-    ============================================= */
+           Reset & Base
+        ============================================= */
 * {
     margin: 0;
     padding: 0;
@@ -50,8 +50,8 @@ a {
 
 
 /* =============================================
-       Custom Cursor
-    ============================================= */
+           Custom Cursor
+        ============================================= */
 .cursor {
     width: 12px;
     height: 12px;
@@ -77,8 +77,8 @@ a {
 
 
 /* =============================================
-       Navbar
-    ============================================= */
+           Navbar
+        ============================================= */
 .navbar {
     background: rgba(13, 13, 26, 0.85);
     backdrop-filter: blur(20px);
@@ -101,6 +101,10 @@ a {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.navbar-brand img {
+    height: 55px;
 }
 
 .nav-link {
@@ -158,10 +162,9 @@ a {
 
 
 /* =============================================
-       Hero Section
-    ============================================= */
+           Hero Section
+        ============================================= */
 #hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -216,6 +219,9 @@ a {
 }
 
 .hero-tag {
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -228,7 +234,6 @@ a {
     color: var(--primary);
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 24px;
     animation: fadeDown 0.7s 0.1s both;
 }
 
@@ -250,6 +255,16 @@ a {
     50% {
         opacity: 0;
     }
+}
+
+/* ── Hero intro tagline above title ── */
+.hero-intro {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary);
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    animation: fadeDown 0.7s 0.15s both;
 }
 
 /* ── Hero Title: reduced max size so "Developer &" fits on one line (3 lines total) ── */
@@ -316,7 +331,7 @@ a {
 }
 
 .btn-primary-custom {
-    background: linear-gradient(135deg, var(--primary), #8b73ff);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     border: none;
     color: #fff;
     padding: 14px 32px;
@@ -386,9 +401,27 @@ a {
 .hero-visual {
     position: relative;
     animation: fadeLeft 0.9s 0.3s both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px 40px;
+}
+
+/* hero-tag inside the right visual column — override absolute positioning */
+.hero-visual .hero-tag {
+    position: relative;
+    top: auto;
+    right: auto;
+    align-self: flex-end;
+    margin-bottom: 16px;
 }
 
 .hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 24px;
@@ -474,16 +507,17 @@ a {
     gap: 6px;
     white-space: nowrap;
     animation: floatTag 4s ease-in-out infinite;
+    z-index: 3;
 }
 
 .ftag1 {
-    top: -20px;
-    left: -30px;
+    top: 30px;
+    left: -10px;
 }
 
 .ftag2 {
-    bottom: 10px;
-    right: -25px;
+    bottom: 30px;
+    right: -10px;
     animation-delay: -2s;
 }
 
@@ -501,8 +535,8 @@ a {
 
 
 /* =============================================
-       Shared Section Styles
-    ============================================= */
+           Shared Section Styles
+        ============================================= */
 section {
     padding: 100px 0;
     position: relative;
@@ -540,8 +574,8 @@ section {
 
 
 /* =============================================
-       About Section
-    ============================================= */
+           About Section
+        ============================================= */
 #about {
     background: var(--darker);
 }
@@ -602,8 +636,8 @@ section {
 
 
 /* =============================================
-       Timeline
-    ============================================= */
+           Timeline
+        ============================================= */
 .timeline {
     position: relative;
     padding-left: 24px;
@@ -667,8 +701,8 @@ section {
 
 
 /* =============================================
-       Skills Section
-    ============================================= */
+           Skills Section
+        ============================================= */
 #skills {
     background: var(--dark);
 }
@@ -758,8 +792,8 @@ section {
 
 
 /* =============================================
-       Services Section
-    ============================================= */
+           Services Section
+        ============================================= */
 #services {
     background: var(--darker);
 }
@@ -836,8 +870,8 @@ section {
 
 
 /* =============================================
-       Projects Section
-    ============================================= */
+           Projects Section
+        ============================================= */
 #projects {
     background: var(--dark);
 }
@@ -865,6 +899,19 @@ section {
     font-size: 4rem;
     position: relative;
     overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.05);
 }
 
 .project-img::after {
@@ -916,8 +963,8 @@ section {
 
 
 /* =============================================
-       Values Section
-    ============================================= */
+           Values Section
+        ============================================= */
 #values {
     background: var(--darker);
 }
@@ -959,8 +1006,8 @@ section {
 
 
 /* =============================================
-       Contact Section
-    ============================================= */
+           Contact Section
+        ============================================= */
 #contact {
     background: var(--dark);
 }
@@ -1074,8 +1121,8 @@ textarea.form-control-custom {
 
 
 /* =============================================
-       Footer
-    ============================================= */
+           Footer
+        ============================================= */
 footer {
     background: var(--darker);
     border-top: 1px solid var(--border);
@@ -1090,8 +1137,8 @@ footer p {
 
 
 /* =============================================
-       Scroll-to-Top Button
-    ============================================= */
+           Scroll-to-Top Button
+        ============================================= */
 .scroll-top {
     position: fixed;
     bottom: 30px;
@@ -1124,8 +1171,8 @@ footer p {
 
 
 /* =============================================
-       Scroll Reveal Animations
-    ============================================= */
+           Scroll Reveal Animations
+        ============================================= */
 @keyframes fadeDown {
     from {
         opacity: 0;
@@ -1174,8 +1221,8 @@ footer p {
 
 
 /* =============================================
-       Responsive — Mobile
-    ============================================= */
+           Responsive — Mobile
+        ============================================= */
 @media (max-width: 768px) {
     .hero-stats {
         gap: 24px;
@@ -1195,10 +1242,20 @@ footer p {
     .ftag2 {
         display: none;
     }
+
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+        letter-spacing: -1px;
+    }
+
+    .hero-visual {
+        padding: 16px 0;
+    }
 }
+
 /* =============================================
-   Experience Section
-   ============================================= */
+       Experience Section
+       ============================================= */
 #experience {
     padding: 120px 0;
 }
@@ -1294,8 +1351,17 @@ footer p {
 }
 
 @keyframes pulseDot {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: .5; transform: scale(1.4); }
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: .5;
+        transform: scale(1.4);
+    }
 }
 
 .exp-date {
@@ -1358,9 +1424,11 @@ footer p {
     .exp-card {
         gap: 16px;
     }
+
     .exp-body {
         padding: 20px 20px;
     }
+
     .exp-icon-wrap {
         width: 44px;
         height: 44px;

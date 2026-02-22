@@ -20,7 +20,9 @@
 
   <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Humaira<span style="color:var(--secondary)"> Afroja</span></a>
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/portfolio-logo.png">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span
           class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse justify-content-center" id="navMenu">
@@ -44,12 +46,13 @@
     <div class="hero-blob blob2"></div>
     <div class="hero-blob blob3"></div>
     <div class="container position-relative" style="z-index:2">
-      <div class="row align-items-center g-5">
+      <div class="row align-items-center d-flex g-5">
         <div class="col-lg-7">
-          <div class="hero-tag"><span></span>Available for Freelance Work</div>
+          <div class="hero-tag d-lg-none"><span></span>Available for Freelance Work</div>
+          <p class="hero-intro">I am Humaira Afroja, a</p>
           <h1 class="hero-title">Full-Stack<br><span class="gradient-text">Developer &amp;</span><br>AI Partner</h1>
-          <p class="hero-subtitle">CSE student at IIUC · Building digital products that combine clean code, smart design
-            &amp; AI-powered solutions — focused on quality and long-term impact.</p>
+          <p class="hero-subtitle">Building digital products that combine clean code, smart design
+            &amp; AI-powered solutions, focused on quality and long-term impact.</p>
           <div class="hero-badges">
             <span class="badge-pill"><i class="fa-solid fa-graduation-cap"></i> IIUC — CSE</span>
             <span class="badge-pill"><i class="fa-solid fa-robot"></i> Flowmingo AI Partner</span>
@@ -76,7 +79,8 @@
           </div>
         </div>
         <div class="col-lg-5">
-          <div class="hero-visual align-items-center justify-content-center">
+          <div class="hero-visual align-items-start d-flex">
+            <!-- <div class="hero-tag d-none d-lg-inline-flex"><span></span>Available for Freelance Work</div> -->
             <div class="floating-tag ftag1"><i class="fa-brands fa-react" style="color:#61dafb"></i> React.js</div>
             <div class="floating-tag ftag2"><i class="fa-solid fa-brain" style="color:var(--primary)"></i> AI
               Integration</div>
@@ -107,14 +111,16 @@
         <div class="col-lg-5 reveal-left">
           <div class="section-tag"><i class="fa-solid fa-user"></i> About Me</div>
           <h2 class="section-title mb-4">Passionate about <span>code &amp; collaboration</span></h2>
-          <p style="color:var(--muted);line-height:1.8;font-size:.95rem">I am a Full-Stack Web Developer and a CSE
+          <p style="color:var(--muted);line-height:1.8;font-size:.95rem">I am Humaira Afroja, a Full-Stack Web Developer
+            and a CSE
             student at IIUC. Solving real-world problems through technology is my passion.</p>
           <p style="color:var(--muted);line-height:1.8;font-size:.95rem;margin-top:16px">As a Business Partner at
             Flowmingo AI, I work on AI-driven solutions and have gained valuable experience collaborating with clients
             across various niches. I am committed to delivering high-quality work and building long-term partnerships.
           </p>
-          <div class="hero-actions mt-4"><a href="#" class="btn-primary-custom"
-              style="font-size:.85rem;padding:12px 24px"><i class="fa-solid fa-download"></i> Download CV</a></div>
+          <div class="hero-actions mt-4"><a target="_blank" href="assets/Humaira_Afroja_CV.pdf"
+              class="btn-primary-custom" style="font-size:.85rem;padding:12px 24px"><i class="fa-solid fa-download"></i>
+              Download CV</a></div>
         </div>
         <div class="col-lg-7 reveal">
           <div class="about-card">
@@ -123,7 +129,7 @@
                 <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                 <div>
                   <h6>Education</h6>
-                  <p>B.Sc. in CSE — IIUC, Chittagong</p>
+                  <p>B.Sc. in CSE at IIUC</p>
                 </div>
               </div>
               <div class="about-item">
@@ -156,11 +162,11 @@
               <div class="timeline">
                 <div class="timeline-item">
                   <div class="timeline-date">Currently Pursuing</div>
-                  <div class="timeline-title">B.Sc. CSE @ IIUC</div>
+                  <div class="timeline-title">B.Sc. in CSE at International Islamic University Chittagong</div>
                   <div class="timeline-desc">Core programming, algorithms, software engineering & project work.</div>
                 </div>
                 <div class="timeline-item">
-                  <div class="timeline-date">2026 – Upcoming</div>
+                  <div class="timeline-date">Upcoming</div>
                   <div class="timeline-title">NSDA Level-3 Examination</div>
                   <div class="timeline-desc">National Skills Development Authority professional certification.</div>
                 </div>
@@ -363,116 +369,163 @@
         <div class="section-tag justify-content-center"><i class="fa-solid fa-folder-open"></i> Recent Work</div>
         <h2 class="section-title">Featured <span>Projects</span></h2>
       </div>
+
       <div class="row g-4">
-        <div class="col-md-6 col-lg-4 reveal">
-          <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#667eea,#764ba2)"><i
-                class="fa-solid fa-cart-shopping" style="z-index:1;position:relative"></i></div>
-            <div class="project-body">
-              <h5 class="mb-2">E-Commerce Platform</h5>
-              <p>Full store with cart, payment integration, admin dashboard & SEO optimization.</p>
-              <div class="project-links"><a target="_blank" href="https://saveur-by-webdevhumaira.netlify.app/" class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+        <a href="https://webdevhumaira.github.io/Saveur/" target="_blank">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="assets/images/saveur-thumbnail.png" alt="">
+              </div>
+              <div class="project-body">
+                <h5 class="mb-2">E-Commerce Platform</h5>
+                <p>Full store with cart, payment integration, admin dashboard & SEO optimization.</p>
+                <div class="project-links"><a target="_blank" href="https://webdevhumaira.github.io/Saveur//"
+                    class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i
+                      class="fa-brands fa-github"></i> Code</a></div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.15s">
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.15s">
+        <a href="https://webdevhumaira.github.io/Ambrosia/" target="_blank">
           <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#fa709a,#fee140)"><i
-                class="fa-solid fa-utensils" style="z-index:1;position:relative"></i></div>
+            <div class="project-img">
+              <img src="assets/images/ambrosia-thumbnail.png" alt="">
+            </div>
             <div class="project-body">
               <h5 class="mb-2">Restaurant Web App</h5>
               <p>Online ordering with real-time tracking, loyalty points & kitchen management.</p>
-              <div class="project-links"><a target="_blank" href="https://webdevhumaira.github.io/Ambrosia/ class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+              <div class="project-links"><a target="_blank" href="https://webdevhumaira.github.io/Ambrosia/"
+                  class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i
+                    class="fa-brands fa-github"></i> Code</a></div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.05s">
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
+        <a href="https://webdevhumaira.github.io/Online-Japanese-Learning/" target="_blank">
           <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#f093fb,#f5576c)"><i
-                class="fa-solid fa-heartbeat" style="z-index:1;position:relative"></i></div>
-            <div class="project-body">
-              <h5 class="mb-2">Healthcare Appointment System</h5>
-              <p>Patient booking with doctor scheduling, reminders & admin panel.</p>
-              <div class="project-links"><a target="_blank" href="https://medicare-by-webdevhumaira.netlify.app/" class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+            <div class="project-img">
+              <img src="assets/images/lms-thumbnail.png" alt="">
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
-          <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"><i
-                class="fa-solid fa-graduation-cap" style="z-index:1;position:relative"></i></div>
             <div class="project-body">
               <h5 class="mb-2">EdTech Learning Platform</h5>
               <p>Course platform with video streaming, quizzes, progress tracking & certificates.</p>
-              <div class="project-links"><a target="_blank" href="https://quiz-app-by-webdevhumaira.netlify.app/" class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+              <div class="project-links"><a target="_blank"
+                  href="https://webdevhumaira.github.io/Online-Japanese-Learning/" class="plink filled"><i
+                    class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i class="fa-brands fa-github"></i>
+                  Code</a></div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.1s">
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.05s">
+        <a href="https://webdevhumaira.github.io/HMS/" target="_blank">
           <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#0a1c93,#f5576c)"><i
-                class="fa-solid fa-cloud-sun" style="z-index:1;position:relative"></i></div>
+            <div class="project-img">
+              <img src="assets/images/medicare-thumbnail.png" alt="">
+            </div>
+            <div class="project-body">
+              <h5 class="mb-2">Healthcare Appointment System</h5>
+              <p>Patient booking with doctor scheduling, reminders & admin panel.</p>
+              <div class="project-links"><a target="_blank" href="https://webdevhumaira.github.io/HMS/"
+                  class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i
+                    class="fa-brands fa-github"></i> Code</a></div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.1s">
+        <a href="https://weather-app-webdevhumaira.netlify.app/" target="_blank">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/images/weather-thumbnail.png" alt="">
+            </div>
             <div class="project-body">
               <h5 class="mb-2">Weather App</h5>
               <p>Real-time weather updates with location-based forecasts and interactive maps.</p>
-              <div class="project-links"><a target="_blank" href="https://weather-app-webdevhumaira.netlify.app/" class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+              <div class="project-links"><a target="_blank" href="https://weather-app-webdevhumaira.netlify.app/"
+                  class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i
+                    class="fa-brands fa-github"></i> Code</a></div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.2s">
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.2s">
+        <a href="https://webdevhumaira.github.io/Grid-Runner/" target="_blank">
           <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"><i
-                class="fa-solid fa-gamepad" style="z-index:1;position:relative;color:#0d0d1a"></i></div>
+            <div class="project-img">
+              <img src="assets/images/grid-runner-thumbnail.png" alt="">
+            </div>
             <div class="project-body">
               <h5 class="mb-2">Grid Runner</h5>
               <p>Fast-paced grid-based runner game with smooth controls and responsive design.</p>
-              <div class="project-links"><a target="_blank" href="https://webdevhumaira.github.io/Grid-Runner/" class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+              <div class="project-links"><a target="_blank" href="https://webdevhumaira.github.io/Grid-Runner/"
+                  class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i
+                    class="fa-brands fa-github"></i> Code</a></div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
+        <a href="https://bmi-calculator-webdevhumaira.netlify.app/" target="_blank">
           <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#4c15cb,#fbc2eb)"><i
-                class="fa-solid fa-calculator" style="z-index:1;position:relative"></i></div>
+            <div class="project-img">
+              <img src="assets/images/bmi-calculator-thumbnail.png" alt="">
+            </div>
             <div class="project-body">
               <h5 class="mb-2">BMI Calculator</h5>
               <p>Interactive BMI calculator with health insights and visual charts.</p>
-              <div class="project-links"><a target="_blank" href="https://bmi-calculator-webdevhumaira.netlify.app/" class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+              <div class="project-links"><a target="_blank" href="https://bmi-calculator-webdevhumaira.netlify.app/"
+                  class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i
+                    class="fa-brands fa-github"></i> Code</a></div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
+        <a href="https://currencyconverterbyhumaira.netlify.app/" target="_blank">
           <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#ddb217,#fbc2eb)"><i
-                class="fa-solid fa-money-bill-wave" style="z-index:1;position:relative"></i></div>
+            <div class="project-img">
+              <img src="assets/images/currency-converter-thumbnail.png" alt="">
+            </div>
             <div class="project-body">
               <h5 class="mb-2">Currency Converter</h5>
               <p>Real-time currency conversion with historical exchange rates and intuitive UI.</p>
-              <div class="project-links"><a target="_blank" href="https://currencyconverterbyhumaira.netlify.app/" class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+              <div class="project-links"><a target="_blank" href="https://currencyconverterbyhumaira.netlify.app/"
+                  class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i
+                    class="fa-brands fa-github"></i> Code</a></div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
+        <a href="https://quiz-app-by-webdevhumaira.netlify.app/" target="_blank">
           <div class="project-card">
-            <div class="project-img" style="background:linear-gradient(135deg,#180a3b,#fbc2eb)"><i
-                class="fa-solid fa-question-circle" style="z-index:1;position:relative"></i></div>
+            <div class="project-img">
+              <img src="assets/images/quiz-app-thumbnail.png" alt="">
+            </div>
             <div class="project-body">
               <h5 class="mb-2">Quiz App</h5>
               <p>Interactive quiz application with multiple-choice questions, scoring, and performance tracking.</p>
-              <div class="project-links"><a target="_blank" href="https://quiz-app-by-webdevhumaira.netlify.app/" class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a
-                  href="#" class="plink"><i class="fa-brands fa-github"></i> Code</a></div>
+              <div class="project-links"><a target="_blank" href="https://quiz-app-by-webdevhumaira.netlify.app/"
+                  class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a href="#" class="plink"><i
+                    class="fa-brands fa-github"></i> Code</a></div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
+
+    </div>
     </div>
   </section>
 
@@ -482,14 +535,16 @@
       <div class="text-center mb-5 reveal">
         <div class="section-tag justify-content-center"><i class="fa-solid fa-briefcase"></i> Professional Journey</div>
         <h2 class="section-title">My <span>Experience</span></h2>
-        <p style="color:var(--muted);max-width:480px;margin:16px auto 0;font-size:.9rem;line-height:1.7">Real-world roles where I apply my skills, collaborate with teams, and create meaningful impact.</p>
+        <p style="color:var(--muted);max-width:480px;margin:16px auto 0;font-size:.9rem;line-height:1.7">Real-world
+          roles where I apply my skills, collaborate with teams, and create meaningful impact.</p>
       </div>
       <div class="exp-timeline">
 
         <!-- Experience 1: Flowmingo AI -->
         <div class="exp-card reveal">
           <div class="exp-left">
-            <div class="exp-icon-wrap" style="background:linear-gradient(135deg,rgba(108,99,255,.2),rgba(255,101,132,.15))">
+            <div class="exp-icon-wrap"
+              style="background:linear-gradient(135deg,rgba(108,99,255,.2),rgba(255,101,132,.15))">
               <i class="fa-solid fa-robot" style="color:var(--primary)"></i>
             </div>
             <div class="exp-line"></div>
@@ -500,8 +555,11 @@
               <span class="exp-date"><i class="fa-regular fa-calendar"></i> Oct 2025 – Present</span>
             </div>
             <h4 class="exp-title">Business Partner</h4>
-            <div class="exp-company"><i class="fa-solid fa-building" style="color:var(--primary)"></i> Flowmingo AI</div>
-            <p class="exp-desc">Working as a Business Partner at Flowmingo AI, contributing to AI-driven product strategies, client acquisition, and business development. Collaborating on building innovative AI solutions that deliver measurable value to clients across multiple niches.</p>
+            <div class="exp-company"><i class="fa-solid fa-building" style="color:var(--primary)"></i> Flowmingo AI
+            </div>
+            <p class="exp-desc">Working as a Business Partner at Flowmingo AI, contributing to AI-driven product
+              strategies, client acquisition, and business development. Collaborating on building innovative AI
+              solutions that deliver measurable value to clients across multiple niches.</p>
             <div class="exp-tags">
               <span class="exp-tag"><i class="fa-solid fa-robot"></i> AI Strategy</span>
               <span class="exp-tag"><i class="fa-solid fa-handshake"></i> Business Dev.</span>
@@ -514,18 +572,22 @@
         <!-- Experience 2: NSDA Internship -->
         <div class="exp-card reveal" style="transition-delay:.15s">
           <div class="exp-left">
-            <div class="exp-icon-wrap" style="background:linear-gradient(135deg,rgba(67,233,123,.2),rgba(56,249,215,.15))">
+            <div class="exp-icon-wrap"
+              style="background:linear-gradient(135deg,rgba(67,233,123,.2),rgba(56,249,215,.15))">
               <i class="fa-solid fa-laptop-code" style="color:var(--accent)"></i>
             </div>
           </div>
           <div class="exp-body">
             <div class="exp-meta">
-              <span class="exp-badge active-badge"><span class="pulse-dot" style="background:var(--accent)"></span> Active</span>
+              <span class="exp-badge active-badge"><span class="pulse-dot" style="background:var(--accent)"></span>
+                Active</span>
               <span class="exp-date"><i class="fa-regular fa-calendar"></i> 2025 – Present</span>
             </div>
             <h4 class="exp-title">Full Stack Development Intern</h4>
             <div class="exp-company"><i class="fa-solid fa-building" style="color:var(--accent)"></i> NSDA </div>
-            <p class="exp-desc">Currently completing a Full Stack Development internship under NSDA (National Skills Development Authority), gaining hands-on experience in building scalable web applications with both frontend and backend technologies, following industry-standard practices.</p>
+            <p class="exp-desc">Currently completing a Full Stack Development internship under NSDA (National Skills
+              Development Authority), gaining hands-on experience in building scalable web applications with both
+              frontend and backend technologies, following industry-standard practices.</p>
             <div class="exp-tags">
               <span class="exp-tag"><i class="fa-brands fa-react"></i> React.js</span>
               <span class="exp-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
@@ -594,7 +656,8 @@
               <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
               <div>
                 <div class="ci-label">Email</div>
-                <div class="ci-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bcd4c9d1ddd5cedd92cbd9ded8d9cad9d0d3ccd9cefcdbd1ddd5d092dfd3d1">[email&#160;protected]</a></div>
+                <div class="ci-value"><a href="mailto:humaira.webdeveloper@gmail.com">humaira.webdeveloper@gmail.com</a>
+                </div>
               </div>
             </div>
             <div class="contact-info-item">
@@ -612,10 +675,14 @@
               </div>
             </div>
             <div class="social-links">
-              <a target="_blank" href="https://github.com/webdevhumaira" class="slink"><i class="fa-brands fa-github"></i></a>
-              <a target="_blank" href="https://www.linkedin.com/in/humairaafroja/" class="slink"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a target="_blank" href="https://facebook.com/engrhumairaafroja/" class="slink"><i class="fa-brands fa-facebook-f"></i></a>
-              <a target="_blank" href="https://www.instagram.com/humaira.afroja/" class="slink"><i class="fa-brands fa-instagram"></i></a>
+              <a target="_blank" href="https://github.com/webdevhumaira" class="slink"><i
+                  class="fa-brands fa-github"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/humairaafroja/" class="slink"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+              <a target="_blank" href="https://facebook.com/engrhumairaafroja/" class="slink"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a target="_blank" href="https://www.instagram.com/humaira.afroja/" class="slink"><i
+                  class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
           <div class="col-lg-7">
@@ -650,8 +717,8 @@
           Afroja</span>
       </p>
       <p>Designed &amp; Built with <span style="color:var(--secondary)"><i class="fa-solid fa-heart"
-            style="font-size:.8rem"></i></span> — CSE Student @ IIUC, Chittagong</p>
-      <p style="margin-top:6px;font-size:.75rem">© 2025 All Rights Reserved</p>
+            style="font-size:.8rem"></i></span> Full Stack Developer</p>
+      <p style="margin-top:6px;font-size:.75rem">© 2026 All Rights Reserved</p>
     </div>
   </footer>
 
@@ -660,4 +727,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
+
 </html>
